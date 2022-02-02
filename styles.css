@@ -1,0 +1,81 @@
+@import './components/vibeui.css';
+
+* {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+body{
+    position: relative;
+}
+
+.navbar{
+    padding: 1.5rem 3rem;
+    box-shadow: 0 8px 5px rgb(233, 230, 230);
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: var(--primary-color);
+}
+.title{
+    display: inline;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.list-inline-item{
+    display: inline;
+    margin: 1rem;
+}
+.image{
+    width: 35vw;
+    height: 35vw;
+}
+.row{
+    display: flex;
+    padding: 1.5rem 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+.content{
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.btns .btn:not(:last-child){
+    margin-right: 0.625rem;
+
+}
+.code-display{
+    box-sizing: border-box;
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+
+}
+iframe{
+    /* width: 500px; */
+    border: none;
+}
+
+.footer{
+    background: whitesmoke;
+    padding: 2rem;
+}
+
+.footer .list{
+    margin-bottom: 1rem;
+}
