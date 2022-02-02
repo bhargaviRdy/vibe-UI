@@ -75,6 +75,10 @@ iframe{
 }
 
 .footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
     margin-top: 2rem;
     background: whitesmoke;
     padding: 2rem;
