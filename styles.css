@@ -39,39 +39,43 @@ body{
     margin: 1rem;
 }
 .image{
-    width: 35vw;
-    height: 35vw;
+    width: 400px;
+}
+
+.image img{
+    width: 300px;
 }
 .row{
     display: flex;
-    padding: 1.5rem 3rem;
+    padding: 3rem 3rem 0 3rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    /* flex-wrap: wrap; */
+    gap: 4rem;
+    flex-wrap: wrap;
 }
 .content{
-    width: 50%;
+    width: 400px;
     font-size: 1rem;
     line-height: 1.5;
+}
+p{
+    margin-top: 20px;
 }
 .btns .btn:not(:last-child){
     margin-right: 0.625rem;
 
 }
 .code-display{
-    box-sizing: border-box;
-    /* width: 100%; */
-    /* overflow-x: hidden; */
-    /* overflow-y: auto; */
-
+    width: 400px;
 }
+
 iframe{
-    /* width: 500px; */
+    width: 100%;
     border: none;
 }
 
 .footer{
+    margin-top: 2rem;
     background: whitesmoke;
     padding: 2rem;
 }
