@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docs | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./components/vibeui.css">
     <link rel="stylesheet" href="docs.css">
 </head>
+
 <body>
-    
+    <div class="docs">
+        <h2>Alerts</h2>
+        <p>
+            Alerts are used to attract user's attention for important information without interrupting the user's flow.
+            Alerts are of 5 types: success, error, warning, primary, secondary.
+            To use the alert you can use the class name <span class="text-primary">alert</span> and add any type of alert using 
+            <span class="text-primary">alert-primary, alert-secondary, alert-danger, alert-success, alert-warning</span>.  You can also use a close button to close an alert by adding a little bit javascript.
+        </p>
+        <div class="component-display">
+            <div class="alert alert-primary">Primary goal is to complete neog in 6 months</div>
+            <div class="alert alert-secondary">Help is always provided in neog</div>
+            <div class="alert alert-success">
+                <span class="alert-icon">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+                Confidence and Consistency is the key
+            </div>
+            <div class="alert alert-danger">
+                <span class="alert-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span
+                >No Hardwork No Results
+            </div>
+            <div class="alert alert-warning">
+                <span class="alert-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                Be Courageous, Don't be afraid to ask questions
+            </div>
+            <div class="alert alert-danger alert-close">
+                <span class="alert-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                Error occured
+                <span class="float-right btn-close">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+        </div>
+        <div class="code-display">
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EPrimary%2520goal%2520is%2520to%2520complete%2520neog%2520in%25206%2520months%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EHelp%2520is%2520always%2520provided%2520in%2520neog%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Confidence%2520and%2520Consistency%2520is%2520the%2520key%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%250A%2520%2520%2520%2520%253ENo%2520Hardwork%2520No%2520Results%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Be%2520Courageous%252C%2520Don%27t%2520be%2520afraid%2520to%2520ask%2520questions%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2520alert-close%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520Be%2520Courageous%252C%2520Don%27t%2520be%2520afraid%2520to%2520ask%2520questions%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522float-right%2520btn-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+  style=" border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    </div>
+
+
+    <script src="docs.js"></script>
 </body>
+
 </html>

@@ -1,1 +1,26 @@
 
+* {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+.docs{
+    margin: 1rem;
+}
+.component-display{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    border-radius: 0.3rem;
+}
+.code-display{
+    box-sizing: border-box;
+    margin: 1rem;
+    width: 100%;
+    /* padding: 1rem; */
+    background: #011627;
+}
+.code-display iframe{
+    width: 100%
+}

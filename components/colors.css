@@ -1,5 +1,16 @@
 :root{
     --primary-color: #8e13fd;
     --secondary-color: #d3f4faff;
-    --tertiary-color: whitesmoke
+    --tertiary-color: whitesmoke;
+
+    --primary-alert-text: #29438b;
+    --primary-alert-bg: #7FD2E6;
+    --secondary-alert-text: #696b79;
+    --secondary-alert-bg: #eaeaec;
+    --success-alert-bg: #84f1c9;
+    --success-alert-text: #1b7052;
+    --danger-alert-bg: #fcc5c5;
+    --danger-alert-text: #dc3545;
+    --warning-alert-text: #ff9204;
+    --warning-alert-bg: #ffe7c5;
 }
