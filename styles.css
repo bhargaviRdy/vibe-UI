@@ -13,7 +13,7 @@ body{
 
 .navbar{
     padding: 1.5rem 3rem;
-    box-shadow: 0 8px 5px rgb(233, 230, 230);
+    box-shadow: 0 8px 5px var(--tertiary-color);
     display: flex;
     justify-content: space-between;
 }
@@ -39,11 +39,11 @@ body{
     margin: 1rem;
 }
 .image{
-    width: 400px;
+    width: 20rem;
 }
 
 .image img{
-    width: 300px;
+    width: 100%;
 }
 .row{
     display: flex;
@@ -54,19 +54,19 @@ body{
     flex-wrap: wrap;
 }
 .content{
-    width: 400px;
+    width: 25rem;
     font-size: 1rem;
     line-height: 1.5;
 }
-p{
-    margin-top: 20px;
+.para{
+    margin-top: 1.5rem;
 }
 .btns .btn:not(:last-child){
     margin-right: 0.625rem;
 
 }
 .code-display{
-    width: 400px;
+    width: 20rem;
 }
 
 iframe{
@@ -78,9 +78,8 @@ iframe{
     position: absolute;
     left: 0;
     right: 0;
-    /* bottom: 0; */
     margin-top: 2rem;
-    background: whitesmoke;
+    background: var(--tertiary-color);
     padding: 2rem;
 }
 
