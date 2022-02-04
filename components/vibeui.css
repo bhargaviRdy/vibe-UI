@@ -2,3 +2,6 @@
 @import './typography.css';
 @import './buttons.css';
 @import './alerts.css';
+@import './avatars.css';
+@import './images.css';
+@import url(./flex.css);
