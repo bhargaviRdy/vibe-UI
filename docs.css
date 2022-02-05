@@ -36,6 +36,7 @@
     height: 75vh;
     background: var(--white);
     box-shadow: 8px 0 5px var(--tertiary-color);
+    min-width: 9rem;
     
 }
 .link{
