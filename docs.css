@@ -8,6 +8,44 @@
 .docs{
     margin: 1rem;
 }
+.navbar{
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 5px var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+.title{
+    display: inline;
+}
+.sidebar{
+    display: inline;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    position: relative;
+}
+.sidebar-list{
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    width: 15%;
+    height: 75vh;
+    background: var(--white);
+    box-shadow: 8px 0 5px var(--tertiary-color);
+    
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.docs{
+    padding: 0.5rem 2rem;
+    grid-area: docs;
+}
 .component-display{
     width: 100%;
     padding: 1rem;
@@ -16,7 +54,6 @@
 }
 .code-display{
     box-sizing: border-box;
-    margin: 1rem;
     width: 100%;
     text-align: center;
     background: #011627;
@@ -24,4 +61,24 @@
 .code-display iframe{
     width: 100%;
     height: auto;
+}
+.sidebar-hide{
+    display: none;
+}
+.sidebar-active{
+    display: block;
+   
+}
+.footer{
+    background: var(--tertiary-color);
+    z-index: 4;
+}
+.sidebar-list .btn:hover{
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+
+}
+.sidebar-list .active{
+    color: var(--primary-color);
+    background: var(--tertiary-color);
 }

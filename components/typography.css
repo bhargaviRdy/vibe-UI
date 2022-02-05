@@ -4,8 +4,17 @@
 .text-secondary{
     color: var(--secondary-color);
 }
+.bg-primary{
+    background: var(--primary-color);
+}
+.bg-secondary{
+    background: var(--secondary-color);
+}
 .text-white{
     color: var(--white);
+}
+.text-black{
+    color: var(--black);
 }
 .text-center{
     text-align: center;
@@ -24,6 +33,9 @@
 }
 .text-underline{
     text-decoration: underline;
+}
+.text-nounderline{
+    text-decoration: none;
 }
 .text-bold-weight{
     font-weight: 700;

@@ -1,6 +1,6 @@
 :root{
     --primary-color: #8e13fd;
-    --secondary-color: #d3f4faff;
+    --secondary-color: #717676bd;
     --tertiary-color: whitesmoke;
 
     --primary-alert-text: #29438b;
@@ -15,4 +15,11 @@
     --warning-alert-bg: #ffe7c5;
 
     --white: #fff;
+    --black: #000;
+    --red: red;
+    --green: green;
+    --orange: orange;
+
+    --margin: 0.25rem;
+    --padding: 0.25rem
 }

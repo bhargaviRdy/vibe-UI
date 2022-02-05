@@ -1,0 +1,55 @@
+.badge-container{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+.badge-red{
+    background: var(--red);
+}
+.badge-green{
+    background: var(--green);
+}
+.badge-orange{
+    background: var(--orange);
+}
+.badge-xl{
+    width: 1.2rem;
+    height: 1.2rem;
+    right: 10%;
+    bottom: 10%;
+}
+.badge-lg{
+    width: 0.9rem;
+    height: 0.9rem;
+    right: 9%;
+    bottom: 9%;
+}
+.badge-sm{
+    width: 0.7rem;
+    height: 0.7rem;
+    right: 7%;
+    bottom: 7%;
+}
+.badge-xs{
+    width: 0.6rem;
+    height: 0.6rem;
+    right: 6%;
+    bottom: 6%;
+}
+.badge-number{
+    background: var(--red);
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--white);
+    text-align: center;
+    top: -0.7rem;
+    right: -1rem;
+}
+.badge-text{
+    font-size: 0.8em;
+    border-radius: 0.3rem;
+    color: var(--white);
+}
