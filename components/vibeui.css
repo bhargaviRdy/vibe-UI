@@ -1,3 +1,10 @@
 @import './colors.css';
 @import './typography.css';
-@import './buttons.css'
+@import './buttons.css';
+@import './alerts.css';
+@import './avatars.css';
+@import './images.css';
+@import url(./flex.css);
+@import url(./utilities.css);
+@import url(./lists.css);
+@import url(./badge.css);

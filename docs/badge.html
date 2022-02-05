@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="../components/vibeui.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="sidebar">
+                <i id="sidebar-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-list sidebar-hide" id="sidebar-list">
+                <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black active">Badge</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
+            </div>
+
+            <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
+        </div>
+        <ul class="list">
+            <li class="list-inline-item ml-4 ">
+                <a class="link h5" href="https://github.com/bhargaviRdy/vibe-ui">
+                    <span class="nav-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="docs">
+        <h2 id="badge">Badges</h2>
+        <p>
+            Badges are used when we need to show an extra information like status or a number or a tag showing new. We
+            can use Badges along with avatars for different sizes using <span class="text-primary">badge-xl, badge-lg,
+                badge-sm, badge-xs</span>classes. We can also show avatars in different colours using <span
+                class="text-primary">badge-red, badge-green, badge-orange</span> classes. We can use a number badge
+            using <span class="text-primary">badge-number</span> class.
+            <span class="text-primary">avatar-xs, avatar-sm, avatar-lg, avatar-xl, avatar-text</span> classes to our
+            code.
+        </p>
+        <h4>Color and Number Badge</h4>
+        <div class="component-display flex flex-center flex-gap-2 flex-wrap">
+            <div class="badge-container">
+                <img class="avatar avatar-xl" src="../images/dp.jpg" alt="profile">
+                <span class="badge badge-xl badge-green"></span>
+            </div>
+            <div class="badge-container">
+                <img class="avatar avatar-lg" src="../images/dp.jpg" alt="profile">
+                <span class="badge badge-lg badge-red"></span>
+            </div>
+            <div class="badge-container">
+                <img class="avatar avatar-sm" src="../images/dp.jpg" alt="profile">
+                <span class="badge badge-sm badge-orange"></span>
+            </div>
+            <div class="badge-container">
+                <img class="avatar avatar-xs" src="../images/dp.jpg" alt="profile">
+                <span class="badge badge-xs badge-green"></span>
+            </div>
+            <div class="badge-container">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge badge-number">4</span>
+            </div>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xl%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-xl%2520badge-green%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-lg%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-lg%2520badge-red%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-sm%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-sm%2520badge-orange%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xs%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-xs%2520badge-green%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-number%2522%253E4%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <h4 class="pt-3">Text Badge</h4>
+        <div class="component-display flex flex-column">
+            <h3>Announcements <span class="badge-text bg-primary p-1">New</span> <span
+                    class="badge-text bg-secondary p-1">World</span></h3>
+            <h4>Announcements <span class="badge-text bg-primary p-1">New</span> <span
+                    class="badge-text bg-secondary p-1">World</span></h4>
+            <h5>Announcements <span class="badge-text bg-primary p-1">New</span> <span
+                    class="badge-text bg-secondary p-1">World</span></h5>
+            <p>Announcements <span class="badge-text bg-primary p-1">New</span> <span
+                    class="badge-text bg-secondary p-1">World</span></p>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch3%253EAnnouncements%2520%253Cspan%2520class%253D%2522badge-text%2520bg-primary%2520p-1%2522%253ENew%253C%252Fspan%253E%2520%253Cspan%2520class%253D%2522badge-text%2520bg-secondary%2520p-1%2522%253EWorld%253C%252Fspan%253E%253C%252Fh3%253E%250A%253Ch4%253EAnnouncements%2520%253Cspan%2520class%253D%2522badge-text%2520bg-primary%2520p-1%2522%253ENew%253C%252Fspan%253E%2520%253Cspan%2520class%253D%2522badge-text%2520bg-secondary%2520p-1%2522%253EWorld%253C%252Fspan%253E%253C%252Fh4%253E%250A%253Ch5%253EAnnouncements%2520%253Cspan%2520class%253D%2522badge-text%2520bg-primary%2520p-1%2522%253ENew%253C%252Fspan%253E%2520%253Cspan%2520class%253D%2522badge-text%2520bg-secondary%2520p-1%2522%253EWorld%253C%252Fspan%253E%253C%252Fh5%253E%250A%253Cp%253EAnnouncements%2520%253Cspan%2520class%253D%2522badge-text%2520bg-primary%2520p-1%2522%253ENew%253C%252Fspan%253E%2520%253Cspan%2520class%253D%2522badge-text%2520bg-secondary%2520p-1%2522%253EWorld%253C%252Fspan%253E%253C%252Fp%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    </div>
+    <footer class="footer text-center p-5">
+        <ul class="list">
+            <li class="list-inline-item m-4"><a class="link" href="https://github.com/bhargaviRdy"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link" href="https://twitter.com/bhargavi_s23"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link"
+                    href="https://www.linkedin.com/in/bhargavi-sunkireddy-a60b041a1/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>

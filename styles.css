@@ -12,10 +12,11 @@ body{
 }
 
 .navbar{
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     box-shadow: 0 8px 5px var(--tertiary-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .link{
     text-decoration: none;
@@ -28,7 +29,7 @@ body{
     display: inline;
 }
 
-.list{
+/* .list{
     list-style: none;
     padding: 0;
     font-size: 1.2rem;
@@ -37,7 +38,7 @@ body{
 .list-inline-item{
     display: inline;
     margin: 1rem;
-}
+} */
 .image{
     width: 20rem;
 }
@@ -68,21 +69,10 @@ body{
 .code-display{
     width: 20rem;
 }
-
 iframe{
     width: 100%;
     border: none;
 }
-
 .footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 2rem;
     background: var(--tertiary-color);
-    padding: 2rem;
-}
-
-.footer .list{
-    margin-bottom: 1rem;
 }
