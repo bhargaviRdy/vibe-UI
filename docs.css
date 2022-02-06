@@ -52,6 +52,7 @@
     padding: 1rem;
     background-color: var(--tertiary-color);
     border-radius: 0.3rem;
+    box-sizing: border-box;
 }
 .code-display{
     box-sizing: border-box;
@@ -62,6 +63,9 @@
 .code-display iframe{
     width: 100%;
     height: auto;
+}
+.image-container{
+    width: 50%;
 }
 .sidebar-hide{
     display: none;
