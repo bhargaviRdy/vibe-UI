@@ -4,15 +4,17 @@
 .badge{
     position: absolute;
     border-radius: 50%;
-    border: 2px solid var(--white);
 }
 .badge-red{
+    border: 2px solid var(--white);
     background: var(--red);
 }
 .badge-green{
+    border: 2px solid var(--white);
     background: var(--green);
 }
 .badge-orange{
+    border: 2px solid var(--white);
     background: var(--orange);
 }
 .badge-xl{
