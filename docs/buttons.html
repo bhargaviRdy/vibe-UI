@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../components/vibeui.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="sidebar">
+                <i id="sidebar-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-list sidebar-hide" id="sidebar-list">
+                <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
+                <a class="btn btn-long m-0 py-3 text-black  active">Buttons</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
+            </div>
+
+            <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
+        </div>
+        <ul class="list">
+            <li class="list-inline-item ml-4 ">
+                <a class="link h5" href="https://github.com/bhargaviRdy/vibe-ui">
+                    <span class="nav-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="docs">
+        <h2 id="buttons">Buttons</h2>
+        <p>
+            Buttons are usaually used when we wanted to do something only when clicked. They act as call to action.
+            There are few classes which can be used to achieve our required goals.
+            <span class="text-primary">btn, btn-primary, btn-primary-outline, btn-long, btn-text-primary</span> classes
+            to our
+            code. We can use the help of utility classes to acheive few more designs for buttons
+        </p>
+        <h4>Primary Buttons</h4>
+        <div class="component-display flex flex-gap-1 flex-wrap">
+            <button class="btn btn-primary">Click</button>
+            <button class="btn btn-primary-outline">Dismiss</button>
+            <button class="btn btn-text-primary p-2">Learn more</button>
+            <button class="btn text-primary"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-primary"><span class="mr-2"><i class="fas fa-shopping-cart"></i></span> Add to
+                Skills</i></button>
+
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253EPrimary-Outline%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-text-primary%2520p-2%2522%253ELearn%2520more%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520text-primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%253Cspan%2520class%253D%2522mr-2%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%2520Add%2520to%2520Skills%253C%252Fi%253E%253C%252Fbutton%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <h4 class="pt-3">Secondary Buttons</h4>
+        <div class="component-display flex flex-gap-1 flex-wrap">
+            <button class="btn btn-secondary">Click</button>
+            <button class="btn btn-secondary-outline">Dismiss</button>
+            <button class="btn btn-text-secondary p-2">Learn more</button>
+            <button class="btn text-secondary"><i class="fas fa-trash-alt"></i></button>
+            <button class="btn btn-secondary"><span class="mr-2"><i class="fas fa-shopping-cart"></i></span> Add to
+                Skills</i></button>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EClick%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253EDismiss%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-text-secondary%2520p-2%2522%253ELearn%2520more%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520text-secondary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash-alt%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253E%253Cspan%2520class%253D%2522mr-2%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520Add%2520to%2520Skills%253C%252Fi%253E%253C%252Fbutton%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    </div>
+    <footer class="footer text-center p-5">
+        <ul class="list">
+            <li class="list-inline-item m-4"><a class="link" href="https://github.com/bhargaviRdy"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link" href="https://twitter.com/bhargavi_s23"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link"
+                    href="https://www.linkedin.com/in/bhargavi-sunkireddy-a60b041a1/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
