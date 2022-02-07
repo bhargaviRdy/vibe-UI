@@ -31,12 +31,13 @@
     line-height: 1.5rem;
     display: none;
     color: var(--red);
+    align-self: flex-end;
 }
 
 .form-validated .form-input:invalid~.form-field-error{
     display: block;
 }
-.form-validated:valid~.form-field-success{
+.form-validated .form-checkbox-field:invalid~.form-field-error{
     display: block;
 }
 .col-20{
