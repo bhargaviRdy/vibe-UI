@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../components/vibeui.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="sidebar">
+                <i id="sidebar-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-list sidebar-hide" id="sidebar-list">
+                <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="images.html">Images</a>
+                <a class="btn btn-long m-0 py-3 text-black active" href="inputs.html">Input</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="text-utilitites.html">Text</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="lists.html">Lists</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="modal.html">Modal</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="rating.html">Rating</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="grid.html">Grid</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="navigation.html">Navigation</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="slider.html">slider</a>
+            </div>
+
+            <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
+        </div>
+        <ul class="list">
+            <li class="list-inline-item ml-4 ">
+                <a class="link h5" href="https://github.com/bhargaviRdy/vibe-ui">
+                    <span class="nav-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="docs">
+        <h2 id="inputs">Inputs</h2>
+        <p>
+            Inputs are mostly used in forms to get get user input. We have few classes to customize inputs
+
+            <span class="text-primary">alert-primary, alert-secondary, alert-danger, alert-success,
+                alert-warning</span>. You can also use a close button to close an alert by adding a little bit
+            javascript.
+        </p>
+        <h4>Inputs - Text and TextArea</h4>
+        <div class="component-display">
+            <form class="form">
+                <div class="form-row">
+                    <label class="form-label required m-2" for="email">Email Id</label>
+                    <input class="form-input m-2 " type="email" id="email" placeholder="Enter your Email Address">
+                </div>
+                <div class="form-row">
+                    <label class="form-label required m-2" for="comments">Comments</label>
+                    <textarea class="form-input m-2" id="comments" placeholder="Please share your comments"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520required%2520m-2%2522%2520for%253D%2522email%2522%2520%253EEmail%2520Id%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2520m-2%2520%2522%2520type%253D%2522email%2522%2520id%253D%2522email%2522%2520placeholder%253D%2522Enter%2520your%2520Email%2520Address%2522%2520%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520m-2%2522%2520for%253D%2522comments%2522%2520%253EComments%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Ctextarea%2520class%253D%2522form-input%2520m-2%2522%2520id%253D%2522comments%2522%2520placeholder%253D%2522Please%2520share%2520your%2520comments%2522%253E%253C%252Ftextarea%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <h4>Disabled & ReadOnly Inputs</h4>
+        <div class="component-display">
+            <form class="form">
+                <div class="form-row">
+                    <input class="form-input m-2 " type="text" id="name" placeholder="Eligible for only Learners"
+                        disabled>
+                </div>
+                <div class="form-row">
+                    <input class="form-input m-2 " type="text" id="name" placeholder="bhargavisunkireddy239@gmail.com"
+                        readonly>
+                </div>
+            </form>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2520m-2%2520%2522%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522Eligible%2520for%2520only%2520Learners%2522%2520disabled%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2520m-2%2520%2522%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522bhargavisunkireddy239%2540gmail.com%2522%2520readonly%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                style=" border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <h4 class="pt-2">Input Validation</h4>
+        <div class="component-display">
+            <form class="form validation-example" novalidate>
+                <div class="form-row">
+                        <label class="form-label required m-2" for="contact">Contact</label>
+                    
+                        <input id="contact" class="form-input" placeholder="enter mobile number"
+                            pattern="^(\+91)?\s?[1-9][0-9]{9}$" required />
+                        <div class="form-validation-msg form-field-error col-80 text-right"><span class="form-field-symbol p-2"><i
+                                    class="fas fa-exclamation-circle"></i></span>Please fill mobile number!
+                        </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2520m-2%2520%2522%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522Eligible%2520for%2520only%2520Learners%2522%2520disabled%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2520m-2%2520%2522%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522bhargavisunkireddy239%2540gmail.com%2522%2520readonly%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                style=" border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    </div>
+    <footer class="footer text-center p-5">
+        <ul class="list">
+            <li class="list-inline-item m-4"><a class="link" href="https://github.com/bhargaviRdy"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link" href="https://twitter.com/bhargavi_s23"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link"
+                    href="https://www.linkedin.com/in/bhargavi-sunkireddy-a60b041a1/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
+    </footer>
+    <script src="sidebar.js"></script>
+    <script>
+        const form = document.querySelector(".validation-example");
+        const error = document.querySelector(".form-field-error");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            form.classList.add("form-validated");
+        }); 
+    </script>
+</body>
+
+</html>

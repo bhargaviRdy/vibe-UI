@@ -27,17 +27,20 @@
     font-size: 1.3rem;
     margin-right: 2rem;
     position: relative;
+/* overflow: scroll; */
 }
 .sidebar-list{
+    box-sizing: border-box;
     position: absolute;
     left: 0;
-    top: 4rem;
+    top: 3.5rem;
     width: 15%;
-    height: 75vh;
+    height: 90vh;
     background: var(--white);
     box-shadow: 8px 0 5px var(--tertiary-color);
-    min-width: 9rem;
-    
+    min-width: 10rem;
+    z-index: 1000;
+    overflow: auto;
 }
 .link{
     text-decoration: none;
@@ -87,3 +90,6 @@
     color: var(--primary-color);
     background: var(--tertiary-color);
 }
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }

@@ -1,0 +1,47 @@
+.form-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form-label{
+    display: inline-block;
+    flex-grow: 3;
+    flex-basis: auto;
+    width: 25%;
+}
+.form-input{
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: transparent;
+    flex-basis: auto;
+    flex-grow: 7;
+    width: 70%;
+}
+.form .required:after{
+    content: "*";
+    color: var(--red);
+}
+.form-input:focus{
+    outline-color: var(--primary-color);
+}
+.form-field-error{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    display: none;
+    color: var(--red);
+}
+
+.form-validated .form-input:invalid~.form-field-error{
+    display: block;
+}
+.form-validated:valid~.form-field-success{
+    display: block;
+}
+.col-20{
+    width: 20%;
+}
+.col-80{
+    width: 80%;
+}
