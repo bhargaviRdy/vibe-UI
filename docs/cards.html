@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../components/vibeui.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="sidebar">
+                <i id="sidebar-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-list sidebar-hide" id="sidebar-list">
+                <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
+                <a class="btn btn-long m-0 py-3 text-black  active">Card</a>
+            </div>
+
+            <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
+        </div>
+        <ul class="list">
+            <li class="list-inline-item ml-4 ">
+                <a class="link h5" href="https://github.com/bhargaviRdy/vibe-ui">
+                    <span class="nav-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="docs">
+        <h2 id="cards">Cards</h2>
+        <p>
+            Cards are usually used to show a set of related information at a single place
+            There are few classes which can be used to achieve our required goals.
+            <span class="text-primary">card, card-v, card-h, overlay-container, overlay-text</span> classes
+            to our
+            code. We can use the help of utility classes to acheive further customisation inside card
+        </p>
+        <h4>Horizontal Card</h4>
+        <div class="component-display flex flex-gap-1 flex-wrap">
+            <div class="card card-h flex flex-row py-2 px-4">
+                <img class="badge-container ml-3" src="../images/kidwear.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column ml-4">
+                    <span class="h5">Kids Uniform</span>
+                    <span class="py-1">Boys Daily wear for neog camp</span>
+                    <small class="text-secondary py-1">Sold by: Someone</small>
+                    <span class="py-1">Some description about the product to attract the customers obviously </span>
+                    <div class="btns flex flex-row flex-wrap flex-gap-1">
+                        <button class="btn btn-primary my-3"><span class="mr-2"><i
+                                    class="fas fa-shopping-cart"></i></span>Add to Card</i></button>
+                        <button class="btn btn-secondary-outline my-3">Move to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-h%2520flex%2520flex-row%2520py-2%2520px-4%2522%253E%250A%253Cimg%2520class%253D%2522badge-container%2520ml-3%2522%2520src%253D%2522..%252Fimages%252Fkidwear.jpeg%2522%2520alt%253D%2522kids-dress%2522%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-text%2520bg-primary%2520px-2%2520py-1%2522%253ENew%253C%252Fspan%253E%250A%253Cdiv%2520class%253D%2522card-content%2520flex%2520flex-column%2520ml-4%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522h5%2522%253EKids%2520Uniform%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522py-1%2522%253EBoys%2520Daily%2520wear%2520for%2520neog%2520camp%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-secondary%2520py-1%2522%253ESold%2520by%253A%2520Someone%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522py-1%2522%253ESome%2520description%2520about%2520the%2520product%2520to%2520attract%2520the%2520customers%2520obviously%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btns%2520flex%2520flex-row%2520flex-wrap%2520flex-gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%253Cspan%2520class%253D%2522mr-2%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Card%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253EMove%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style=" border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <h4 class="pt-3">Vertical Card</h4>
+        <div class="component-display flex flex-gap-1 flex-wrap">
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/kidwear.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="py-1">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-2"><span class="mr-2"><i
+                                class="fas fa-shopping-cart"></i></span>Add to
+                        Card</i></button>
+                </div>
+            </div>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-v%2520flex%2520flex-column%2520py-2%2520px-2%2522%253E%250A%253Cimg%2520class%253D%2522badge-container%2522%2520src%253D%2522..%252Fimages%252Fkidwear.jpeg%2522%2520alt%253D%2522kids-dress%2522%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-text%2520bg-primary%2520px-2%2520py-1%2522%253ENew%253C%252Fspan%253E%250A%253Cdiv%2520class%253D%2522card-content%2520flex%2520flex-column%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522h6%2522%253EKids%2520Uniform%2520%253Cspan%2520class%253D%2522%2520%2520text-secondary%2520float-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522py-1%2522%253EBoys%2520Daily%2520wear%2520for%2520neog%2520camp%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-regular-weight%2522%253ERs.899%2520%253Cspan%2520class%253D%2522text-secondary%2522%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522text-strike-through%2522%253ERs.999%253C%252Fspan%253E%253Cspan%2520class%253D%2522text-primary%2522%253E10%2525%253C%252Fspan%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520my-2%2522%253E%253Cspan%2520class%253D%2522mr-2%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%250A%2520%2520%2520%2520%2520%2520%2520%2520Card%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <h4 class="pt-3">Card with Text Overlay</h4>
+        <div class="component-display flex flex-center">
+            <div class="overlay-container">
+                <div class="card card-v flex flex-column py-2 px-2">
+                    <img class="badge-container" src="../images/kidwear.jpeg" alt="kids-dress">
+                    <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                    <div class="card-content flex flex-column mx-2">
+                        <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                                <i class="fas fa-heart"></i></span> </span>
+                        <span class="py-1">Boys Daily wear for neog camp</span>
+                        <p class="text-regular-weight">Rs.899 <span class="text-secondary"><span
+                                    class="text-strike-through">Rs.999</span><span
+                                    class="text-primary">10%</span></span>
+                        </p>
+                        <button class="btn btn-primary my-2"><span class="mr-2"><i
+                                    class="fas fa-shopping-cart"></i></span>Add to
+                            Card</i></button>
+                    </div>
+                </div>
+                <div class="overlay-text text-lg bg-tertiary">Out of Stock</div>
+            </div>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522overlay-container%2522%253E%250A%253Cdiv%2520class%253D%2522card%2520card-v%2520flex%2520flex-column%2520py-2%2520px-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-container%2522%2520src%253D%2522..%252Fimages%252Fkidwear.jpeg%2522%2520alt%253D%2522kids-dress%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-text%2520bg-primary%2520px-2%2520py-1%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2520flex%2520flex-column%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522h6%2522%253EKids%2520Uniform%2520%253Cspan%2520class%253D%2522%2520%2520text-secondary%2520float-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522py-1%2522%253EBoys%2520Daily%2520wear%2520for%2520neog%2520camp%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-regular-weight%2522%253ERs.899%2520%253Cspan%2520class%253D%2522text-secondary%2522%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522text-strike-through%2522%253ERs.999%253C%252Fspan%253E%253Cspan%2520class%253D%2522text-primary%2522%253E10%2525%253C%252Fspan%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520my-2%2522%253E%253Cspan%2520class%253D%2522mr-2%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Card%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522overlay-text%2520text-lg%2520bg-tertiary%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    </div>
+    <footer class="footer text-center p-5">
+        <ul class="list">
+            <li class="list-inline-item m-4"><a class="link" href="https://github.com/bhargaviRdy"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link" href="https://twitter.com/bhargavi_s23"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link"
+                    href="https://www.linkedin.com/in/bhargavi-sunkireddy-a60b041a1/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>

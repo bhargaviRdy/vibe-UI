@@ -74,6 +74,9 @@ p, .p{
     margin: 0.625rem 0;
     line-height: 1.5;
 }
+.text-lg{
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 768px){
     
     .h1, h1{
