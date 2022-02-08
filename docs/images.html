@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docs | VibeUI</title>
+    <title>Images | VibeUI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
@@ -21,11 +21,11 @@
             </div>
             <div class="sidebar-list sidebar-hide" id="sidebar-list">
                 <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
-                <a class="btn btn-long m-0 py-3 text-black active">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
-                <a class="btn btn-long m-0 py-3 text-black" href="images.html">Images</a>
+                <a class="btn btn-long m-0 py-3 text-black active">Images</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="inputs.html">Input</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="text-utilitites.html">Text</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="lists.html">Lists</a>
@@ -35,7 +35,6 @@
                 <a class="btn btn-long m-0 py-3 text-black" href="navigation.html">Navigation</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="slider.html">slider</a>
             </div>
-            
             <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
         </div>
         <ul class="list">
@@ -49,39 +48,36 @@
         </ul>
     </nav>
     <div class="docs">
-        <h2 id="avatars">Avatars</h2>
+        <h2 id="images">Images</h2>
         <p>
-            Avatars are a representation of user as a profile picture or user initials as text. They are available in
-            different sizes. We can use them by adding
-            <span class="text-primary">avatar-xs, avatar-sm, avatar-lg, avatar-xl, avatar-text</span> classes to our
-            code.
+            Images can be made responsive to fit the parents width and can be made round shaped using
+            <span class="text-primary">img-fluid, img-circle</span> classes
+            to our code. We can use the help of utility classes to acheive further customisation like desired
+            border-radius or a border
         </p>
-        <h4>Image Avatar</h4>
-        <div class="component-display flex flex-center flex-gap-2 flex-wrap">
-            <img class="avatar avatar-xl" src="../images/dp.jpg" alt="profile">
-            <img class="avatar avatar-lg" src="../images/dp.jpg" alt="profile">
-            <img class="avatar avatar-sm" src="../images/dp.jpg" alt="profile">
-            <img class="avatar avatar-xs" src="../images/dp.jpg" alt="profile">
+        <h4>Responsive Image</h4>
+        <div class="component-display flex flex-gap-1 flex-wrap flex-center">
+            <div class="image-container ">
+                <img src="../images/cat-image.jpg" alt="cat-image" class="img-fluid">
+            </div>
         </div>
         <div class="code-display">
             <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xl%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%253Cimg%2520%2520class%253D%2522avatar%2520avatar-lg%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%253Cimg%2520%2520class%253D%2522avatar%2520avatar-sm%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xs%2522%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520alt%253D%2522profile%2522%253E%250A"
-                style="border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fcat-image.jpg%2522%2520%250A%2520%2520%2520%2520%2520alt%253D%2522cat-image%2522%2520%250A%2520%2520%2520%2520%2520class%253D%2522img-fluid%2522%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
             </iframe>
         </div>
-        <h4 class="pt-3">Text Avatar</h4>
-        <div class="component-display flex flex-center flex-gap-2">
-            <span class="avatar avatar-xl avatar-text text-white">BS</span>
-            <span class="avatar avatar-lg avatar-text text-white">BS</span>
-            <span class="avatar avatar-sm avatar-text text-white">BS</span>
-            <span class="avatar avatar-xs avatar-text text-white">BS</span>
+        <h4 class="pt-3">Rounded Image</h4>
+        <div class="component-display flex flex-center">
+            <div class="image-container">
+                <img src="../images/dp.jpg" alt="profile-image" class="img-fluid img-circle">
+            </div>
+
         </div>
         <div class="code-display">
             <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2520avatar-text%2520text-white%2522%253EBS%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2520text-white%2522%253EBS%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2520text-white%2522%253EBS%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2520text-white%2522%253EBS%253C%252Fspan%253E"
-                style="border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520%250A%2520%2520%2520%2520%2520alt%253D%2522profile-image%2522%2520%250A%2520%2520%2520%2520%2520class%253D%2522img-fluid%2520img-circle%2522%250A%253E"
+                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
             </iframe>
         </div>
     </div>
