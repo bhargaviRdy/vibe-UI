@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../components/vibeui.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="sidebar">
+                <i id="sidebar-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-list sidebar-hide" id="sidebar-list">
+                <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="images.html">Images</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="inputs.html">Input</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="text-utilities.html">Typography</a>
+                <a class="btn btn-long m-0 py-3 text-black active">Lists</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="modal.html">Modal</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="rating.html">Rating</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="grid.html">Grid</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="navigation.html">Navigation</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="slider.html">Slider</a>
+            </div>
+
+            <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
+        </div>
+        <ul class="list">
+            <li class="list-inline-item ml-4 ">
+                <a class="link h5" href="https://github.com/bhargaviRdy/vibe-ui">
+                    <span class="nav-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="docs">
+        <h2>Lists</h2>
+        <p>
+            We all have situations where we need different customisation for lists like inline for navigation, stacked
+            for notifications ect.,
+        </p>
+        <h4>Unordered Lists</h4>
+        <p> We have <span class="text-primary">ul-square, ul-circle, ul-disc, ul-none</span> classes to style the
+            markers for Unordered Lists.</p>
+        <p>For Ordered Lists we can use inbuilt <span class="text-primary">type</span> attribute to get different
+            numbering of lists.</p>
+        <div class="component-display p-md flex flex-row flex-center flex-gap-2 flex-wrap">
+            <div>
+                <ul class="ul-square p-1">
+                    <li class="li">bhargaviRdy</li>
+                </ul>
+                <ul class="ul-circle p-1">
+                    <li class="li">bhargaviRdy</li>
+                </ul>
+                <ul class="ul-disc p-1">
+                    <li class="li">bhargaviRdy</li>
+                </ul>
+                <ul class="ul-none p-1">
+                    <li class="li">bhargaviRdy</li>
+                </ul>
+            </div>
+            <div>
+                <ol type="1" class="p-1">
+                    <li>bhargaviRdy</li>
+                </ol>
+                <ol type="A" class="p-1">
+                    <li>bhargaviRdy</li>
+                </ol>
+                <ol type="i" class="p-1">
+                    <li>bhargaviRdy</li>
+                </ol>
+                <ol type="I" class="p-1">
+                    <li>bhargaviRdy</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520%2520class%253D%2522ul-square%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522li%2522%253EbhargaviRdy%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522ul-circle%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522li%2522%253EbhargaviRdy%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Col%2520type%253D%25221%2522%2520class%253D%2522p-1%2522%253E%250A%2520%2520%2520%2520%253Cli%253EbhargaviRdy%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520type%253D%2522A%2522%2520class%253D%2522p-1%2522%253E%250A%2520%2520%2520%2520%253Cli%253EbhargaviRdy%253C%252Fli%253E%250A%253C%252Fol%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <h4 class="mt-4">Horizontal Lists</h4>
+        <p>We have classes like <span class="text-primary">list-inline-item</span> to make list items display
+            horizontally</p>
+        <div class="component-display flex flex-center">
+            <ul class="ul-none p-0">
+                <li class="list-inline-item p-2">Home</li>
+                <li class="list-inline-item p-2">About</li>
+                <li class="list-inline-item p-2">Contact</li>
+            </ul>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522ul-none%2520p-0%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2520p-2%2522%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2520p-2%2522%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2520p-2%2522%253EContact%253C%252Fli%253E%250A%253C%252Ful%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <h4 class="mt-4">Stacked Lists</h4>
+        <p>We can use the class<span class="text-primary">stacked-list</span> to display a series of messages in a
+            stack.</p>
+        <div class="component-display">
+            <ul class="stacked-list ul-none p=0">
+                <li>
+                    <span class="md text-primary">Message from XYZ</span>
+                    <p class="pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus sunt
+                        repellat. Adipisci, voluptates doloremque.</p>
+                </li>
+                <li>
+                    <span class="md text-primary">Message from XYZ</span>
+                    <p class="pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus sunt
+                        repellat. Adipisci, voluptates doloremque.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stacked-list%2520ul-none%2520p%253D0%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522md%2520text-primary%2522%253EMessage%2520from%2520XYZ%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522pb-0%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Natus%2520doloribus%2520sunt%2520repellat.%2520Adipisci%252C%2520voluptates%2520doloremque.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    </div>
+    <footer class="footer text-center p-5">
+        <ul class="list">
+            <li class="list-inline-item m-4"><a class="link" href="https://github.com/bhargaviRdy"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link" href="https://twitter.com/bhargavi_s23"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link"
+                    href="https://www.linkedin.com/in/bhargavi-sunkireddy-a60b041a1/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
+    </footer>
+    <script src="sidebar.js"></script>
+    <script>
+        const form = document.querySelector(".validation-example");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            form.classList.add("form-validated");
+        }); 
+    </script>
+</body>
+
+</html>

@@ -66,6 +66,7 @@
 .code-display iframe{
     width: 100%;
     height: auto;
+    border: 0;
 }
 .image-container{
     width: 50%;
