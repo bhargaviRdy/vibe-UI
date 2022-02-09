@@ -77,6 +77,21 @@ p, .p{
 .text-lg{
     font-size: 1.5rem;
 }
+.text-md{
+    font-size: 1.25rem;
+}
+.text-sm{
+    font-size: 0.75rem;
+}
+.p-lg{
+    font-size: 1.5rem;
+}
+.p-md{
+    font-size: 1.25rem;
+}
+.p-sm{
+    font-size: 0.75rem;
+}
 @media screen and (max-width: 768px){
     
     .h1, h1{
