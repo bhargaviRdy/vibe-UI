@@ -14,7 +14,7 @@
 }
 .modal{
     background: var(--tertiary-color);
-    margin: 30% auto;
+    margin: 17% auto;
     text-align: center;
     border: 1px solid var(--close-button);
     border-radius: 5px;
