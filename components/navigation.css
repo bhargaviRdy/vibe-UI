@@ -2,14 +2,13 @@
     box-sizing: border-box;
     padding: 0.3rem 1rem;
     width: 100%;
-    /* height: auto; */
-    /* min-height: 10vh; */
     background-color: var(--white);
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     gap: 0.7rem;
+    box-shadow: 0 8px 5px var(--tertiary-color);
 }
 .navbar--logo-title{
     display: flex;
@@ -47,7 +46,6 @@
         display: none;
     }
 }
-
 @media screen and (max-width: 600px){
     
     .navbar--search{
