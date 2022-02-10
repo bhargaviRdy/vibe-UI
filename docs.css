@@ -16,18 +16,19 @@
     align-items: center;
     position: sticky;
     top: 0;
+    right: 0;
     z-index: 2;
     background: white;
 }
 .title{
     display: inline;
+    font-weight: 700;
 }
 .sidebar{
     display: inline;
     font-size: 1.3rem;
     margin-right: 2rem;
     position: relative;
-/* overflow: scroll; */
 }
 .sidebar-list{
     box-sizing: border-box;
