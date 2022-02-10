@@ -10,6 +10,9 @@
 .bg-secondary{
     background: var(--secondary-color);
 }
+.bg-white{
+    background: var(--white);
+}
 .text-white{
     color: var(--white);
 }
