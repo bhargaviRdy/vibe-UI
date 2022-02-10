@@ -68,6 +68,11 @@
     height: auto;
     border: 0;
 }
+.row-gap{
+    height: 1rem;
+    width: auto;
+    background-color: var(--white);
+}
 .image-container{
     width: 50%;
 }

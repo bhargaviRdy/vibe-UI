@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings | VibeUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../components/vibeui.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div class="sidebar">
+                <i id="sidebar-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="sidebar-list sidebar-hide" id="sidebar-list">
+                <a class="btn btn-long m-0 py-3 text-black" href="alerts.html">Alerts</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="avatar.html">Avatars</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="images.html">Images</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="inputs.html">Input</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="text-utilities.html">Typography</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="lists.html">Lists</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="modal.html">Modal</a>
+                <a class="btn btn-long m-0 py-3 text-black active">Rating</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="grid.html">Grid</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="navigation.html">Navigation</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="slider.html">Slider</a>
+            </div>
+
+            <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
+        </div>
+        <ul class="list">
+            <li class="list-inline-item ml-4 ">
+                <a class="link h5" href="https://github.com/bhargaviRdy/vibe-ui">
+                    <span class="nav-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="docs">
+        <h2>Rating</h2>
+        <p>
+            We usually come across ratings everywhere, which are used to display the level of customer satisfaction
+        </p>
+
+        <h4>Rating Input</h4>
+        <p> We have <span class="text-primary">rating-input, rating-icon</span>
+            classes to create a rating input. 
+        </p>
+        <div class="component-display">
+            <form class="example-rating-form">
+                <h5>Rate our product</h5>
+                <div class="rating-container">
+                    <label>
+                        <input class="rating-input" type="checkbox">
+                        <i class="fas fa-star rating-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-input" type="checkbox">
+                        <i class="fas fa-star rating-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-input" type="checkbox">
+                        <i class="fas fa-star rating-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-input" type="checkbox">
+                        <i class="fas fa-star rating-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-input" type="checkbox">
+                        <i class="fas fa-star rating-icon"></i>
+                    </label>
+                </div>
+                <p class="show-rating"></p>
+            </form>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522example-rating-form%2522%253E%250A%2520%2520%2520%2520%253Ch5%253ERate%2520our%2520product%253C%252Fh5%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <div class="row-gap"></div>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=javascript&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FJavaScript%250Aconst%2520ratingStars%2520%253D%2520document.querySelectorAll%28%2522.example-rating-form%2520.rating-input%2522%29%253B%250AratingStars.forEach%28%28star%252C%2520id%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520star.addEventListener%28%2522change%2522%252C%2520%28%29%2520%253D%253E%2520checkAllTheBelowStars%28id%29%29%253B%250A%257D%29%250A%250Afunction%2520checkAllTheBelowStars%28idx%29%2520%257B%250A%2520%2520%2520%2520for%28let%2520i%2520%253D%25200%253B%2520i%2520%253C%2520ratingStars.length%253B%2520i%252B%252B%29%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%28i%2520%253C%253D%2520idx%29%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratingStars%255Bi%255D.checked%2520%253D%2520true%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520else%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratingStars%255Bi%255D.checked%2520%253D%2520false%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%257D%250A%257D"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <h4 class="mt-5">Read Only Rating and Rating Badge</h4>
+        <p>We can create a read only rating using disabled keyword in checkbox tag. We have <span class="text-primary">rating-badge, rating-badge-star</span> classes to display ratings</p>
+        <div class="component-display flex flex-center flex-gap-2">
+            <div class="rating-star-container ">
+                <label>
+                    <input class="rating-input" type="checkbox" checked disabled>
+                    <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-input" type="checkbox" checked disabled>
+                    <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-input" type="checkbox" checked disabled>
+                    <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-input" type="checkbox" disabled>
+                    <i class="fas fa-star rating-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-input" type="checkbox" disabled>
+                    <i class="fas fa-star rating-icon"></i>
+                </label>
+            </div>
+
+            <div class="rating-badge">
+                <span class="rating-badge-number mx-1">3</span>
+                <span class="rating-badge-star "><i class="fas fa-star"></i></span>
+                <span class="rating-badge-number mx-1">|</span>
+                <span class="rating-badge-number">5</span>
+            </div>
+        </div>
+        <div class="code-display">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-star-container%2520%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-input%2522%2520type%253D%2522checkbox%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating-badge%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-number%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-number%2522%253E%257C%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-number%2522%253E5%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+    </div>
+    <footer class="footer text-center p-5">
+        <ul class="list">
+            <li class="list-inline-item m-4"><a class="link" href="https://github.com/bhargaviRdy"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link" href="https://twitter.com/bhargavi_s23"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item m-4"><a class="link"
+                    href="https://www.linkedin.com/in/bhargavi-sunkireddy-a60b041a1/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
+    </footer>
+    <script src="sidebar.js"></script>
+    <script>
+        const ratingStars = document.querySelectorAll(".example-rating-form .rating-input");
+        const showRating = document.querySelector(".show-rating");
+
+        ratingStars.forEach((star, id) => {
+            star.addEventListener("change", () => checkAllTheBelowStars(id));
+        })
+
+        function checkAllTheBelowStars(idx) {
+            for (let i = 0; i < ratingStars.length; i++) {
+                if (i <= idx) {
+                    ratingStars[i].checked = true;
+                }
+                else {
+                    ratingStars[i].checked = false;
+                }
+            }
+            showRating.innerText = `You have submitted ${idx + 1} rating`;
+        }
+    </script>
+</body>
+
+</html>

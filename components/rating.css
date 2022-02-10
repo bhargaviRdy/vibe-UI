@@ -1,0 +1,39 @@
+:root{
+    --icon: rgba(0,0,0,0.26);
+    --icon-hover: #ffd675;
+    --icon-checked: #ffb400;
+}
+.rating-input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.rating-icon{
+    color: var(--icon);
+}
+.rating-input:enabled .rating-icon{
+    cursor: pointer;
+}
+.rating-input:enabled + .rating-icon:hover{
+    color: var(--icon-hover);
+}
+.rating-input:checked + .rating-icon{
+    color: var(--icon-checked);
+}
+.rating-badge{
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    padding: 0.3rem;
+}
+.rating-badge-star{  
+    color: var(--icon-checked);
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.2rem;
+}
