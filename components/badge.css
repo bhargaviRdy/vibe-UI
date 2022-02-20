@@ -43,9 +43,12 @@
 }
 .badge-number{
     background: var(--red);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     top: -0.7rem;
     right: -1rem;
