@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images | VibeUI</title>
+    <title>Slider | VibeUI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
@@ -25,7 +25,7 @@
                 <a class="btn btn-long m-0 py-3 text-black" href="badge.html">Badge</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="buttons.html">Buttons</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="cards.html">Card</a>
-                <a class="btn btn-long m-0 py-3 text-black active">Images</a>
+                <a class="btn btn-long m-0 py-3 text-black" href="images.html">Images</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="inputs.html">Input</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="text-utilities.html">Text</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="lists.html">Lists</a>
@@ -34,7 +34,7 @@
                 <a class="btn btn-long m-0 py-3 text-black" href="toast.html">Toast</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="grid.html">Grid</a>
                 <a class="btn btn-long m-0 py-3 text-black" href="navigation.html">Navigation</a>
-                <a class="btn btn-long m-0 py-3 text-black" href="slider.html">Slider</a>
+                <a class="btn btn-long m-0 py-3 text-black active">Slider</a>
 
             </div>
             <a class="text-bold-weight h4 title button text-primary text-nounderline " href="../index.html">Vibe UI</a>
@@ -50,37 +50,25 @@
         </ul>
     </nav>
     <div class="docs">
-        <h2 id="images">Images</h2>
+        <h2>Slider</h2>
         <p>
-            Images can be made responsive to fit the parents width and can be made round shaped using
-            <span class="text-primary">img-fluid, img-circle</span> classes
-            to our code. We can use the help of utility classes to acheive further customisation like desired
-            border-radius or a border
+            Sliders are used to select a value in a range of values.
+            To use the slider you can use the combination of <span class="text-primary">slider-container, slider</span>
+            and create a customised slider
         </p>
-        <h4>Responsive Image</h4>
-        <div class="component-display flex flex-gap-1 flex-wrap flex-center">
-            <div class="image-container ">
-                <img src="../images/cat-image.jpg" alt="cat-image" class="img-fluid">
+        <div class="component-display">
+            <div class="slider-container">
+                <label class="slider-track" for="range">
+                    <input type="range" min="1" max="1000" value="50" class="slider" id="range">
+                </label>
             </div>
+            <div class="output"></div>
         </div>
         <div class="code-display">
             <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fcat-image.jpg%2522%2520%250A%2520%2520%2520%2520%2520alt%253D%2522cat-image%2522%2520%250A%2520%2520%2520%2520%2520class%253D%2522img-fluid%2522%253E"
-                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
-            </iframe>
-        </div>
-        <h4 class="pt-3">Rounded Image</h4>
-        <div class="component-display flex flex-center">
-            <div class="image-container">
-                <img src="../images/dp.jpg" alt="profile-image" class="img-fluid img-circle">
-            </div>
-
-        </div>
-        <div class="code-display">
-            <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fdp.jpg%2522%2520%250A%2520%2520%2520%2520%2520alt%253D%2522profile-image%2522%2520%250A%2520%2520%2520%2520%2520class%253D%2522img-fluid%2520img-circle%2522%250A%253E"
-                style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522slider-track%2522%2520for%253D%2522range%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%25221000%2522%2520value%253D%252250%2522%2520class%253D%2522slider%2522%2520id%253D%2522range%2522%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
         </div>
     </div>
     <footer class="footer text-center p-5">
@@ -96,6 +84,15 @@
         <div class="text-primary pt-3">© 2022 Bhargavi Sunkireddy</div>
     </footer>
     <script src="sidebar.js"></script>
+    <script>
+        const slider = document.querySelector("#range");
+        const output = document.querySelector(".output");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
 </body>
 
 </html>

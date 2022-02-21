@@ -23,4 +23,5 @@ There are a bunch of component available in VIBE-UI component library, following
 * [Toast](https://vibe-ui-bhargavi.netlify.app/docs/toast.html)
 * [Grid](https://vibe-ui-bhargavi.netlify.app/docs/grid.html)
 * [Navigation](https://vibe-ui-bhargavi.netlify.app/docs/navigation.html)
+* [Slider](https://vibe-ui-bhargavi.netlify.app/docs/slider.html)
 
