@@ -1,6 +1,8 @@
 # [VIBE-UI](https://vibe-ui-bhargavi.netlify.app)
 Component Library to build your website faster with inbuild function available
 
+![Animation](/images/vibeui-animation.gif)
+
 ## Installation
 To use this component library, just add the below link tag in head tag of your html page
 ``` 
@@ -24,4 +26,3 @@ There are a bunch of component available in VIBE-UI component library, following
 * [Grid](https://vibe-ui-bhargavi.netlify.app/docs/grid.html)
 * [Navigation](https://vibe-ui-bhargavi.netlify.app/docs/navigation.html)
 * [Slider](https://vibe-ui-bhargavi.netlify.app/docs/slider.html)
-
